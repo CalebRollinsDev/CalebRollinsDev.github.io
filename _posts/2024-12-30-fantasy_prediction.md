@@ -2,6 +2,9 @@
 layout: post2
 title:  "Predicting Fantasy Football Scores"
 date:   "2024-12-30"
+author: Caleb Rollins
+description: An analysis of different statistical models for predicting fantasy football scores
+tags: data-science fantasy-football
 ---
 
 How do you decide whether to start a player for your fantasy football team? You likely look at how many points that player has scored on average this season. You may pay special attention to the last few games to see if that player is on a hot streak. You also probably consider the strength of the opposing defense. From experience, you develop informal strategies for combining this information into predictions that allow you to draft players and to choose which players to start and which players to bench. Statistical modeling allows us to take these informal intuitions and fit them to data from past seasons to make predictions in a structured way.
@@ -13,7 +16,8 @@ In this article, I am going to share 3 different statistical models applied to 2
 Supervised learning is one type of machine learning. Machine learning fits statistical models to data. In supervised learning, the statistical models use input variables to predict an output variable. For example, let's say I'm trying to sell my house, and I want to know how much it might sell for. I have data about other houses in my neighborhood such as:
 1. The size of the house in square feet
 2. How many bedrooms the house has
-3. How many bathrooms the house
+3. How many bathrooms the house has
+
 If I know how much those houses sold for, I can fit a model to this data and predict how much my house might sell for based on this model. These input variables (size, bedrooms, and bathrooms) are called features.
 
 To apply the general process of supervised learning, we need to choose a set of features and choose an outcome variable. We then split the data into a training set and a test set of data. We fit the model on the training set, and then evaluate our predictions on the test set. This process of splitting the data is analogous to how someone might prepare for a test. They have a set of practice problems (the training set) that they use to learn how to take the test. They then take the test (the test set) which is going to have problems they've never seen before. The problems on the test must differ from the practice problems if we want to evaluate whether the test taker understands the content or just memorized the practice problems. In supervised learning, "memorizing" is analogous to the concept of overfitting, which is when the model fits too close to the training data in a way that doesn't generalize to data that the model wasn't trained on. 
