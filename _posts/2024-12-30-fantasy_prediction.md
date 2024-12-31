@@ -169,5 +169,5 @@ The best model for predicting whether a player will score over 20 points is the 
 
 The three models are similar in performance with the gradient boosting model performing the best of the three in most cases. While the gradient boosting provides better regression estimates and better brier scores by providing more confident probabilities, the linear model can more accurately label data points. You can view the predictions made by these models both in 2020 and for week 17 of the 2024 season in the dashboard below. The predictions don't take into account injuries or inactive players, so it will make predictions as if the player wasn't injured. You can also dig more deeply using the complete dashboard linked here.
 
-<iframe src="https://fantasyfootballprediction-bed7fctpmnoa7zdtzsrfxk.streamlit.app//?embed=true" height="720px" width="100%" style="border:none;"></iframe>
+<iframe src="https://fantasyfootballprediction-bed7fctpmnoa7zdtzsrfxk.streamlit.app//?embed=true" height="900px" width="100%" style="border:none;"></iframe>
 
