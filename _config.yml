@@ -27,6 +27,7 @@ domain: CalebRollinsDev.github.io       # if you want to force HTTPS, specify th
 url: https://CalebRollinsDev.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 author: Caleb Rollins
 logo: images/logo_copy.png
+google_analytics: G-NH1H7VYDG1
 
 # Build settings
 theme: minima
