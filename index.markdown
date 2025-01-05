@@ -4,3 +4,5 @@
 
 layout: home_with_favicon
 ---
+
+{{ jekyll.environment }}
