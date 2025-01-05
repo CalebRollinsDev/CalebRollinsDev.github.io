@@ -1,10 +1,10 @@
 ---
-layout: post2
-title:  "Predicting Fantasy Football Scores"
-date:   "2024-12-30"
-author: Caleb Rollins
-description: An analysis of different statistical models for predicting fantasy football scores
-tags: data-science fantasy-football
+layout: post
+title: Predicting Fantasy Football Scores
+date: 2025-01-04
+categories: [Football, NFL]
+tags: [Data Science, Supervised Learning, NFL, Football]
+render_with_liquid: false
 ---
 
 How do you decide whether to start a player for your fantasy football team? You likely look at how many points that player has scored on average this season. You may pay special attention to the last few games to see if that player is on a hot streak. You also probably consider the strength of the opposing defense. From experience, you develop informal strategies for combining this information into predictions that allow you to draft players and to choose which players to start and which players to bench. Statistical modeling allows us to take these informal intuitions and fit them to data from past seasons to make predictions in a structured way.
@@ -95,7 +95,7 @@ The linear model is one of the simplest statistical models. It makes a predictio
 
 Nearest neighbors is another simple statistical model. Based on the graph below, where values between x=4.5 and x=5.5 have been removed, If I asked you to predict the value when x=5, how might you approach this?. 
 
-![Image](/images/fig1.png)
+![Image](/assets/img/fig1.png)
 
 One reasonable way might be to look at the values between x=4 and x=6 and take the average of those points' y values. This is the same logic used in the nearest neighbors model. Nearest neighbors finds the data points in the training set whose features are "closest" to a given input's features and uses those data points to make predictions. To find the "closest" point, we need to define a distance metric. For the problems in this article, we learn the distance metrics based on the training data. I won't go into the distance metrics in greater detail, but the approaches used here are [Neighborhood Component Analysis](https://scikit-learn.org/stable/modules/neighbors.html#nca)  for classification and [MLKR](https://contrib.scikit-learn.org/metric-learn/supervised.html#mlkr) for regression.
 
@@ -169,5 +169,5 @@ The best model for predicting whether a player will score over 20 points is the 
 
 The three models are similar in performance with the gradient boosting model performing the best of the three in most cases. While the gradient boosting provides better regression estimates and better brier scores by providing more confident probabilities, the linear model can more accurately label data points. You can view the predictions made by these models both in 2020 and for week 17 of the 2024 season in the dashboard below. The predictions don't take into account injuries or inactive players, so it will make predictions as if the player wasn't injured. You can also dig more deeply using the complete dashboard linked here.
 
-<iframe src="https://fantasyfootballprediction-bed7fctpmnoa7zdtzsrfxk.streamlit.app//?embed=true" height="900px" width="100%" style="border:none;"></iframe>
+<iframe src="https://fantasyfootballprediction-bed7fctpmnoa7zdtzsrfxk.streamlit.app//?embed=true" height="720px" width="100%" style="border:none;"></iframe>
 
